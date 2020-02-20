@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Packer build
-        uses: riznob/packer-build-action@master
+        uses: riznob/packer-build-action@v1
         with:
           templateFile: 'packer-template.json'
           varFile: 'packer-vars.json'
@@ -49,7 +49,7 @@ jobs:
 
 ## Example usage
 
-uses: actions/packer-build-action@v1
+uses: riznob/packer-build-action@v1
 with:
   template-file: 'packer-template.json'
   var-file: 'packer-vars.json'
