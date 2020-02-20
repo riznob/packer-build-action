@@ -14,7 +14,7 @@ This action runs packer build.
 
 ### `workingDir`
 
-**Required** Directory where the packer template and var file reside. Default `"."`.
+**Optional** Directory where the packer template and var file reside. Default `"."`.
 
 ## Outputs
 
