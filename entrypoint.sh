@@ -1,19 +1,19 @@
 #!/bin/sh
 set -e
-set -x
 
 # Set the working directory for the template
 cd "${INPUT_WORKINGDIR:-.}"
 
-ls
-echo $INPUT_TEMPLATEFILE
-echo $INPUT_VARFILE
-
-# Selected template file
+# find template file
 if [[ ! -f "$INPUT_TEMPLATEFILE" ]] && [[ $INPUT_TEMPLATEFILE != *.json ]]; then
     echo "${INPUT_TEMPLATEFILE} does not exit in the working directory (${INPUT_WORKINGDIR})"
-    echo ""
-    echo "Setting the file to default."
+    exit 1
+fi
+
+# find var file
+if [[ ! -f "$INPUT_VARFILE" ]] && [[ $INPUT_VARFILE != *.json ]]; then
+    echo "${INPUT_VARFILE} does not exit in the working directory (${INPUT_WORKINGDIR})"
+    exit 1
 fi
 
 set +e

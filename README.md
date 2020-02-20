@@ -18,9 +18,7 @@ This action runs packer build.
 
 ## Outputs
 
-## Usage
-
-### YAML style
+## Example usage
 
 To configure the action simply add the following lines to your .github/workflows/packer-build.yml workflow file:
 
@@ -46,10 +44,3 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-west-2
 ```
-
-## Example usage
-
-uses: riznob/packer-build-action@v1
-with:
-  template-file: 'packer-template.json'
-  var-file: 'packer-vars.json'

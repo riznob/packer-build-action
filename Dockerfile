@@ -9,9 +9,6 @@ LABEL "repository" = "https://github.com/riznob/packer-build-action"
 LABEL "homepage" = "https://github.com/riznob/packer-build-action"
 LABEL "maintainer" = "Robert Anderson <riznob@gmail.com>"
 
-RUN apk add --no-cache jq
-RUN apk add --no-cache curl
-
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
