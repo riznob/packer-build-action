@@ -33,6 +33,7 @@ jobs:
   packer_build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Packer build
         uses: riznob/packer-build-action@v1
         with:
