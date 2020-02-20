@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+set -x
 
 # Set the working directory for the template
 cd "${INPUT_WORKINGDIR:-.}"
