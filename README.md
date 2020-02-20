@@ -1,4 +1,4 @@
-# Hello world docker action
+# Packer build action
 
 This action runs packer build.
 
