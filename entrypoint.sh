@@ -18,7 +18,7 @@ fi
 
 set +e
 # Run packer build
-BUILD_OUTPUT=$(sh -c "packer build -var-file ${INPUT_VARFILE} ${INPUT_TEMPLATEFILE}" 2>&1)
+BUILD_OUTPUT=$(sh -c "packer build -var-file=${INPUT_VARFILE} ${INPUT_TEMPLATEFILE}" 2>&1)
 BUILD_SUCCESS=$?
 echo "$BUILD_OUTPUT"
 set -e
