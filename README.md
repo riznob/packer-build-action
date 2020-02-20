@@ -6,11 +6,11 @@ This action runs packer build.
 
 ### `templateFile`
 
-**Required** Packer template file to use for packer build. Default `"packer-template.json"`.
+**Optional** Packer template file to use for packer build. Default `"packer-template.json"`.
 
 ### `varFile`
 
-**Required** Var file to use for packer build. Default `"packer-vars.json"`.
+**Optional** Var file to use for packer build. Default `"packer-vars.json"`.
 
 ### `workingDir`
 
