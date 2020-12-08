@@ -1,6 +1,6 @@
 # Packer build action
 
-This action runs packer build.
+This action runs packer build.  Forked from https://github.com/riznob/packer-build-action
 
 ## Inputs
 
@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Packer build
-        uses: riznob/packer-build-action@v1.1
+        uses: getsentry/packer-build-action@v1.1
         with:
           templateFile: 'packer-template.json'
           varFile: 'packer-vars.json'
