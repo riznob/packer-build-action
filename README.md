@@ -1,6 +1,6 @@
 # Packer build action
 
-This action runs packer build.
+This action runs packer build. Forked from https://github.com/riznob/packer-build-action
 
 ## Inputs
 
