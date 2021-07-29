@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Packer build
-        uses: riznob/packer-build-action@v1.1
+        uses: riznob/packer-build-action@v1.5
         with:
           templateFile: 'packer-template.json'
           varFile: 'packer-vars.json'
